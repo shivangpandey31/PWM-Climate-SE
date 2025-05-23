@@ -1,0 +1,6 @@
+# Ignore VSCode settings
+.vscode/
+
+# Ignore custom project folders
+Regridded_Joan/
+GRID_CLIM/
