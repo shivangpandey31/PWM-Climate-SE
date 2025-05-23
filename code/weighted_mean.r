@@ -147,7 +147,7 @@ run_for_area <- function(area_name, years, value_name) {
 
     for (year in years) {
         urls <- list_of_urls(base_url, prefix, year)
-        urls <- urls[1:3] # FOR TESTING: process only first 3 months
+        #urls <- urls[1:3] # FOR TESTING: process only first 3 months
 
         dtes <- list()
         for (url in urls) {
@@ -181,7 +181,7 @@ names(parish)[names(parish) == "sockenstadkod"] <- "distriktskod"
 # ------------------------------------------------------------------------------
 # Set up parameters for processing
 # ------------------------------------------------------------------------------
-years <- 2017:2018
+years <- 1961:2018
 base_url <- "https://opendata-download-metanalys.smhi.se/gridclim/"
 prefix_end <- "_NORDIC-3_SMHI-UERRA-Harmonie_RegRean_v1_Gridpp_v1.0.1_day_"
 value_names <- c("tas", "pr", "hurs", "tasmax", "tasmin")

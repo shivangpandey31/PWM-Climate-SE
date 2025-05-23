@@ -115,7 +115,7 @@ Where:
 
 ## 🔗 Data Sources
 
-* **Climate Data:** [SMHI GridClim](https://opendata-download-metanalys.smhi.se/)
+* **Climate Data:** [SMHI GridClim](https://opendata-download-metanalys.smhi.se/gridclim/)
 * **Population Grids:** Statistics Sweden or user-provided
 * **Administrative Boundaries:** Lantmäteriet or other open GIS sources
 
