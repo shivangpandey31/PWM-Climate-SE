@@ -12,8 +12,6 @@ library(sf)            # For simple features (vector data)
 library(data.table)    # For fast data manipulation
 library(exactextractr) # For fast raster extraction over polygons
 library(curl)          # For robust file downloading
-library(dplyr)         # For data manipulation (used elsewhere)
-
 # ------------------------------------------------------------------------------
 # Calculate population-weighted mean for extracted climate data
 # ------------------------------------------------------------------------------

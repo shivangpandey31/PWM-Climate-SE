@@ -4,7 +4,7 @@ This repository contains scripts to compute **population-weighted means of clima
 
 ## 👤 Server Setup
 
-Before running the scripts, make sure the required modules are loaded on the HPC server:
+Before running the scripts, make sure the required modules are loaded if you are using the HPC server:
 
 ```bash
 module purge
@@ -32,13 +32,12 @@ module load UDUNITS/2.2.28
 In your R session, install the required packages:
 
 ```r
-install.packages("ncdf4") # Optional if using other NetCDF tools
+install.packages("ncdf4") # IMPORTANT to install it so terra pckage can read correct extent of ncetdf files
 install.packages("terra")
 install.packages("sf")
 install.packages("data.table")
 install.packages("exactextractr")
 install.packages("curl")
-install.packages("dplyr")
 ```
 
 ## 📁 Scripts Overview
@@ -54,12 +53,6 @@ This script **intersects population grid polygons with administrative boundary p
 * **Outputs**:
 
   * RDS files storing intersected polygons with population and area weights
-
-**Core functionality:**
-
-* Uses the `terra` package for polygon intersection.
-* Computes area in square meters and converts to square kilometers for weighting.
-* Saves processed spatial data to RDS files.
 
 ---
 
@@ -124,6 +117,8 @@ Where:
 ## 👨‍💻 Authors & Acknowledgements
 
 Developed as part of research on climate-health interactions using spatial epidemiology and high-resolution climate data.
+
+This work was supported by the Swedish Centre for Impacts of Climate Extremes (CLIMES) and ISGlobal
 
 ---
 
