@@ -4,3 +4,6 @@
 # Ignore custom project folders
 Regridded_Joan/
 GRID_CLIM/
+
+# Ignore document files
+popn_wgtd_Tas_for_Sweden_Outline.docx
